@@ -1,0 +1,193 @@
+  @import url('https://fonts.googleapis.com/css?family=Poppins');
+  :root{
+      --primary: #f8fc2f;
+      --bg: white;
+  }
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+  }
+  body{
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: #000;
+  }
+  /* Navbar */
+  .navbar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.4rem 7%;
+      background-color: var(--primary);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+  }
+  .navbar-nav{
+      list-style: none;
+      transition: all 0.3s ease 0s ;
+  }
+  .navbar-nav a{
+      transition: all 0.3s ease 0s;
+      padding: 0px 20px;
+  }
+  .navbar-nav a:hover{
+      color: rgb(211, 21, 211);
+  }
+  .navbar a button{
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #006BFF;
+      text-align: center;
+      font-size: medium;
+      cursor: pointer;
+      border-radius: 10px;
+  }
+  .navbar a button:hover{
+      background-color: #555;
+      color: white;
+  }
+  /* hero */
+  .hero-image{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Hero.jpg");
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+  }
+  .hero-text {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+  .hero-text button {
+      border: none;
+      border-radius: 10px;
+      font-size: medium;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #006BFF;
+      text-align: center;
+      cursor: pointer;
+    }
+  .hero-text button:hover {
+      background-color: #555;
+      color: white;
+    }
+    /* content */
+  .buah-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  .title {
+      text-align: center;
+      margin-bottom: 20px; /* Menambahkan jarak antara judul dan teks */
+    }
+    
+  .buah {
+      position: relative;
+      text-align: center;
+      margin: 10px;
+      width: calc(33.33% - 20px);
+      overflow: hidden;
+    }
+    
+    .buah img {
+      width: 250px;
+      height: 250px;
+      transition: transform 0.3s ease;
+    }
+    
+    .buah .deskripsi {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 20px;
+    }
+    
+    .buah:hover .deskripsi {
+      opacity: 1;
+    }
+    
+    .buah:hover img {
+      transform: scale(1.1);
+    }
+    
+    .deskripsi h2 {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+    
+    .deskripsi p {
+      font-size: 1.1em;
+      line-height: 1.4;
+    }
+    /* footer */
+    footer {
+      background-color: var(--primary);
+      color: black;
+      text-align: center;
+      padding: 20px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      position: static;
+      margin-top: 10vh;
+    }
+    .social-icons {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .social-icons li img {
+      width: 50px;
+      height: 50px;
+    }
+
+    /* Form */
+    form {
+      margin-top: 10vh;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    select, input[type="number"], input[type="submit"] {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
